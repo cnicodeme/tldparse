@@ -1,6 +1,6 @@
 # TLDParser
 
-This library is intended to parse a given domain, and return the different parts based on the existing top domains.
+Split a given domain into its different parts (subdomain, domain, suffix).
 
 It was built in the aim to be very fast. To do so, it starts in reverse, going from the TLD down to any subdomains.
 
