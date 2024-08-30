@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # It needs python3 -m pip install --user --upgrade setuptools wheel twine
-VERSION=$(python -c "from mailparse import __version__; print(__version__)")
+VERSION=$(python -c "from tldparser import __version__; print(__version__)")
 
 rm -rf tldparser/__pycache__
 
