@@ -1,9 +1,9 @@
 #!/usr/bin/bash
 
 # It needs python3 -m pip install --user --upgrade setuptools wheel twine
-VERSION=$(python -c "from tldparser import __version__; print(__version__)")
+VERSION=$(python -c "from tldparse import __version__; print(__version__)")
 
-rm -rf tldparser/__pycache__
+rm -rf tldparse/__pycache__
 
 # First, we push to Git with the new tag version
 git add --all

@@ -12,7 +12,7 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
-with open(path.join(here, 'src/__version__.py'), encoding='utf-8') as fp:
+with open(path.join(here, 'tldparse/__version__.py'), encoding='utf-8') as fp:
     try:
         version = re.findall(
             r"^__version__ = \"([^']+)\"\r?$", fp.read(), re.M
@@ -24,18 +24,18 @@ with open(path.join(here, 'src/__version__.py'), encoding='utf-8') as fp:
 # Fields marked as "Optional" may be commented out.
 
 setup(
-    name='tldparser',
+    name='tldparse',
     version=version,
     license='MIT',
     description='Parse a given domain and split it into its subdomain, domain and top-level domain parts.',
     long_description_content_type='text/markdown',
     long_description=long_description,
-    url='https://github.com/cnicodeme/tldparser',
+    url='https://github.com/cnicodeme/tldparse',
     author='Cyril Nicodeme',
     author_email='contact@cnicodeme.com',
     keywords='domain parser tld top-level domain subdomain',
     project_urls={
-        'Source': 'https://github.com/cnicodeme/tldparser',
+        'Source': 'https://github.com/cnicodeme/tldparse',
     },
     packages=find_packages(),
     platforms='any',
