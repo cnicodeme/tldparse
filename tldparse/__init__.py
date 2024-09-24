@@ -12,7 +12,7 @@ class TLDParseObject:
 
     def load(self, filepath=None):
         if not filepath:
-            filepath = os.path.join(os.path.dirname(__file__), '.tld_set')
+            filepath = os.path.join(os.path.dirname(__file__), 'public_suffix_list.dat')
 
         self._load(filepath)
 
