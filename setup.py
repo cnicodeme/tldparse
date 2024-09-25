@@ -38,6 +38,8 @@ setup(
         'Source': 'https://github.com/cnicodeme/tldparse',
     },
     packages=find_packages(),
+    package_data={'': ['tldparse/public_suffix_list.dat']},
+    include_package_data=True,
     platforms='any',
 
     # For a list of valid classifiers, see
