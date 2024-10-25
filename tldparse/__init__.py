@@ -60,8 +60,9 @@ class TLDParseObject:
 
                 break
 
-            tld.append(part)
-            current = current[part]
+            if part is not None:
+                tld.append(part)
+                current = current[part]
 
         tld.reverse()
         part = part.decode('idna')
@@ -199,7 +200,10 @@ class DomainResult:
         """
         Returns the fully qualified domain name
         For instance: google.com
+        In case the _domain is None, like "co.uk", then the fqdn will be null too
         """
+        if not self._domain:
+            return None
         return '{0}.{1}'.format(self._domain, self._tld)
 
     @property
